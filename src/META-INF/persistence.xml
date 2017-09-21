@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence xmlns="http://xmlns.jcp.org/xml/ns/persistence"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/persistence
+                             http://xmlns.jcp.org/xml/ns/persistence/persistence_2_1.xsd"
+	version="2.1">
+
+	<persistence-unit name="mysqlJPA" transaction-type="RESOURCE_LOCAL">
+		<properties>
+			<property name="hibernate.dialect" value="org.hibernate.dialect.MySQLDialect" />
+			<property name="hibernate.connection.driver_class" value="com.mysql.jdbc.Driver" />
+			<property name="hibernate.connection.username" value="root" />
+			<property name="hibernate.connection.password" value="LkjmN123456" />
+			<property name="hibernate.connection.url"
+				value="jdbc:mysql://localhost:3306/shop?zeroDateTimeBehavior=convertToNull&amp;useUnicode=true&amp;characterEncoding=utf-8" />
+			<property name="hibernate.max_fetch_depth" value="1" />
+			<property name="hibernate.hbm2ddl.auto" value="update" />
+			<property name="hibernate.c3p0.preferredTestQuery" value="SELECT 1" />
+			<property name="hibernate.c3p0.testConnectionOnCheckin"
+				value="true" />
+			<property name="hibernate.c3p0.idleConnectionTestPeriod"
+				value="30" />
+			<property name="hibernate.c3p0.max_size" value="100" />
+			<property name="hibernate.c3p0.min_size" value="10" />
+			<property name="hibernate.initialPoolSize" value="10" />
+			<property name="hibernate.c3p0.timeout" value="14400000" />
+			<property name="hibernate.c3p0.max_statements" value="50" />
+			<property name="hibernate.current_session_context_class"
+				value="thread" />
+			<property name="hibernate.show_sql" value="true" />
+		</properties>
+	</persistence-unit>
+</persistence>
