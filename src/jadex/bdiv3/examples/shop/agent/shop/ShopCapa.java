@@ -1,4 +1,4 @@
-package jadex.bdiv3.examples.shop.shop;
+package jadex.bdiv3.examples.shop.agent.shop;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -11,7 +11,7 @@ import jadex.bdiv3.annotation.Goal;
 import jadex.bdiv3.annotation.GoalResult;
 import jadex.bdiv3.annotation.Plan;
 import jadex.bdiv3.annotation.Trigger;
-import jadex.bdiv3.examples.shop.customer.ICustService;
+import jadex.bdiv3.examples.shop.agent.customer.ICustService;
 import jadex.bdiv3.examples.shop.entity.ResultMessage;
 import jadex.bdiv3.examples.shop.entity.po.CommodityPo;
 import jadex.bdiv3.examples.shop.entity.view.ItemInfo;

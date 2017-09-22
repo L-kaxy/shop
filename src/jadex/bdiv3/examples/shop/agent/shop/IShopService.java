@@ -1,4 +1,4 @@
-package jadex.bdiv3.examples.shop.shop;
+package jadex.bdiv3.examples.shop.agent.shop;
 
 import jadex.bdiv3.examples.shop.entity.view.ItemInfo;
 import jadex.commons.future.IFuture;

@@ -9,7 +9,7 @@ import java.awt.event.WindowEvent;
 
 import javax.swing.JFrame;
 
-import jadex.bdiv3.examples.shop.shop.ShopCapa;
+import jadex.bdiv3.examples.shop.agent.shop.ShopCapa;
 import jadex.bdiv3.runtime.ICapability;
 import jadex.bridge.IComponentStep;
 import jadex.bridge.IInternalAccess;

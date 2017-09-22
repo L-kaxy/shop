@@ -1,4 +1,4 @@
-package jadex.bdiv3.examples.shop.customer;
+package jadex.bdiv3.examples.shop.agent.customer;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -10,12 +10,12 @@ import jadex.bdiv3.annotation.Capability;
 import jadex.bdiv3.annotation.Goal;
 import jadex.bdiv3.annotation.Plan;
 import jadex.bdiv3.annotation.Trigger;
+import jadex.bdiv3.examples.shop.agent.shop.IShopService;
 import jadex.bdiv3.examples.shop.entity.ResultMessage;
 import jadex.bdiv3.examples.shop.entity.po.InventoryPo;
 import jadex.bdiv3.examples.shop.entity.view.ItemInfo;
 import jadex.bdiv3.examples.shop.service.ICustomerService;
 import jadex.bdiv3.examples.shop.service.impl.CustomerSerivce;
-import jadex.bdiv3.examples.shop.shop.IShopService;
 import jadex.bdiv3.examples.shop.view.customer.CustomerFrame;
 import jadex.bdiv3.runtime.ICapability;
 import jadex.bridge.nonfunctional.annotation.NameValue;

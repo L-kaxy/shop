@@ -1,4 +1,4 @@
-package jadex.bdiv3.examples.shop.shop;
+package jadex.bdiv3.examples.shop.agent.shop;
 
 import edu.umd.cs.findbugs.annotations.SuppressFBWarnings;
 import jadex.bdiv3.annotation.Belief;

@@ -38,12 +38,12 @@ import javax.swing.event.ListSelectionEvent;
 import javax.swing.event.ListSelectionListener;
 import javax.swing.table.AbstractTableModel;
 
-import jadex.bdiv3.examples.shop.customer.CustomerCapability;
-import jadex.bdiv3.examples.shop.customer.CustomerCapability.AddMoneyGoal;
-import jadex.bdiv3.examples.shop.customer.CustomerCapability.BuyItem;
-import jadex.bdiv3.examples.shop.customer.CustomerCapability.GetInventoryGoal;
+import jadex.bdiv3.examples.shop.agent.customer.CustomerCapability;
+import jadex.bdiv3.examples.shop.agent.customer.CustomerCapability.AddMoneyGoal;
+import jadex.bdiv3.examples.shop.agent.customer.CustomerCapability.BuyItem;
+import jadex.bdiv3.examples.shop.agent.customer.CustomerCapability.GetInventoryGoal;
+import jadex.bdiv3.examples.shop.agent.shop.IShopService;
 import jadex.bdiv3.examples.shop.entity.view.ItemInfo;
-import jadex.bdiv3.examples.shop.shop.IShopService;
 import jadex.bdiv3.features.IBDIAgentFeature;
 import jadex.bdiv3.runtime.ICapability;
 import jadex.bdiv3.runtime.impl.BeliefAdapter;

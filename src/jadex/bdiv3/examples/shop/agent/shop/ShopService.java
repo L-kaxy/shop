@@ -1,8 +1,8 @@
-package jadex.bdiv3.examples.shop.shop;
+package jadex.bdiv3.examples.shop.agent.shop;
 
+import jadex.bdiv3.examples.shop.agent.shop.ShopCapa.SellGoal;
 import jadex.bdiv3.examples.shop.entity.po.CommodityPo;
 import jadex.bdiv3.examples.shop.entity.view.ItemInfo;
-import jadex.bdiv3.examples.shop.shop.ShopCapa.SellGoal;
 import jadex.bdiv3.features.IBDIAgentFeature;
 import jadex.bdiv3.runtime.ICapability;
 import jadex.bridge.service.annotation.Service;

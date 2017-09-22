@@ -1,4 +1,4 @@
-package jadex.bdiv3.examples.shop.customer;
+package jadex.bdiv3.examples.shop.agent.customer;
 
 import jadex.commons.future.IFuture;
 

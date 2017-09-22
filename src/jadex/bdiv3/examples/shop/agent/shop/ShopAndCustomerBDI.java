@@ -1,9 +1,10 @@
-package jadex.bdiv3.examples.shop.customer;
+package jadex.bdiv3.examples.shop.agent.shop;
 
 import edu.umd.cs.findbugs.annotations.SuppressFBWarnings;
 import jadex.bdiv3.annotation.Belief;
 import jadex.bdiv3.annotation.Capability;
 import jadex.bdiv3.annotation.Mapping;
+import jadex.bdiv3.examples.shop.agent.customer.CustomerCapability;
 import jadex.bridge.IInternalAccess;
 import jadex.bridge.component.IArgumentsResultsFeature;
 import jadex.micro.annotation.Agent;
@@ -11,13 +12,14 @@ import jadex.micro.annotation.Argument;
 import jadex.micro.annotation.Arguments;
 
 /**
- * Customer capability.
+ * 
  */
 @Agent
 @Arguments({
-		@Argument(name = "customername", clazz = String.class, defaultvalue = "jadex.commons.SUtil.createUniqueId(\"Customer\",2)") })
-public class CustomerBDI {
+		@Argument(name = "shopname", clazz = String.class, defaultvalue = "jadex.commons.SUtil.createUniqueId(\"Shop\",2)") })
+public class ShopAndCustomerBDI {
 	// -------- attributes --------
+
 	/** The agent. */
 	@Agent
 	@SuppressFBWarnings(value = "UR_UNINIT_READ", justification = "Agent field injected by interpreter")
@@ -25,10 +27,15 @@ public class CustomerBDI {
 
 	/** The customer capability. */
 	@Capability(beliefmapping = @Mapping("money") )
-	protected CustomerCapability cap = new CustomerCapability(
-			(String) agent.getComponentFeature(IArgumentsResultsFeature.class).getArguments().get("customername"));
+	protected CustomerCapability customercap = new CustomerCapability(
+			(String) agent.getComponentFeature(IArgumentsResultsFeature.class).getArguments().get("shopname"));
+
+	/** The shop capability. */
+	@Capability(beliefmapping = @Mapping(value = "money", target = "money") )
+	protected ShopCapa shopcap = new ShopCapa(
+			(String) agent.getComponentFeature(IArgumentsResultsFeature.class).getArguments().get("shopname"));
 
 	/** The money. */
 	@Belief
-	protected double money = 100;
+	protected double money = 100.0;
 }

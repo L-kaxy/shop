@@ -1,6 +1,6 @@
-package jadex.bdiv3.examples.shop.customer;
+package jadex.bdiv3.examples.shop.agent.customer;
 
-import jadex.bdiv3.examples.shop.customer.CustomerCapability.RefreshGoal;
+import jadex.bdiv3.examples.shop.agent.customer.CustomerCapability.RefreshGoal;
 import jadex.bdiv3.features.IBDIAgentFeature;
 import jadex.bdiv3.runtime.ICapability;
 import jadex.bridge.service.annotation.Service;
